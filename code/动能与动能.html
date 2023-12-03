@@ -9,7 +9,7 @@
       border: 1px solid black;
     }
     .input-container {
-      margin-top: 0px;
+      margin-top: 20px;
     }
     label, input, button {
       display: block;
@@ -21,17 +21,24 @@
       border: 1px solid #0366d6;
       padding: 5px 10px;
       font-family: 'Comic Sans MS', cursive;
-      margin-right: 20px; /* 设置右侧边距 */
-      display: inline-block; /* 设置为行内块元素 */
+      margin-right: 20px;
+      display: inline-block;
       }
     a:hover {
       text-decoration: underline;
+    }
+    .txt{
+      font-size: 25px;
+      font-weight: 100;
+      font-style:normal;
+      font-family: 楷体;
     }
     
   </style>
 </head>
 <body>
-    <a href="主页面.html">返回</a>
+    
+    <a href="主页面.html">返回</a><p class="txt">将在动画右侧实时显示动画中两个物体各自速度和动能的数值</p>
   <div class="input-container">
     <canvas id="myCanvas" width="600" height="400"></canvas>
     <label for="mass1">物体1质量:</label>
@@ -47,7 +54,6 @@
     <button onclick="startAnimation()">开始动画</button>
     <button onclick="resetAnimation()">复位</button>
     <button id="pauseButton" onclick="pauseResumeAnimation()">暂停</button>
-
   </div>
 
   <script>
