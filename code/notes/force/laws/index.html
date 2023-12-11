@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="theme-color" content="#222" />
+	<meta name="description" content="Interactive notes for algebra based physics.">
+	<meta name="author" content="Ross Landgreen">
+	<meta property="og:description" content="Interactive notes for algebra based physics.">
+	<meta property="og:title" content="Physics Notes">
+	<meta name="twitter:title" content="Physics Notes">
+	<meta name="twitter:description" content="Interactive notes for algebra based physics.">
+
+	<title>牛顿运动定律</title>
+	<link rel='shortcut icon' href='../../../media/favicon.ico' type='image/x-icon' />
+	<link rel="stylesheet" type="text/css" href="../../../lib/katex/katex.min.css">
+	<script src="../../../lib/katex/katex.min.js"></script>
+	<script src="../../../lib/katex/contrib/auto-render.min.js"></script>
+	<link rel="stylesheet" href="../../../style.css">
+	<style>
+		.quote {
+			font-family: "Times New Roman", Times, serif;
+			font-size: 120%;
+			padding: 0.5em 2em;
+			line-height: 1.25em;
+			/* border-radius: 20px; */
+			/* background: #eee; */
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>
+			<a href="../../../">牛顿运动定律</a>
+		</h1>
+	</header>
+	<article>
+		<!-- <canvas id="matter-canvas-1" width='600' height='100' onclick="matterForce(this)" style="user-select: none;"></canvas> -->
+
+
+		<p>
+			<a href="https://www.bilibili.com/video/BV1rW411M72e/?spm_id_from=333.788.recommend_more_video.0&vd_source=02b12a5e6ff8dd782e936b2f36a443ca">艾萨克·牛顿</a>(1643-1727) 对科学做出了许多深刻的贡献。.
+			 <a href="https://baike.baidu.com/item/%E8%89%BE%E8%90%A8%E5%85%8B%C2%B7%E7%89%9B%E9%A1%BF/1119240">他是科学革命的重要人物</a>,
+			他从事光学研究。
+			他发现了 <a href="https://baike.baidu.com/item/%E4%B8%87%E6%9C%89%E5%BC%95%E5%8A%9B%E5%AE%9A%E5%BE%8B/101452">万有引力</a>,
+			他还因发明微积分而享有盛誉。
+		</p>
+		<p>
+			牛顿在其著作《自然哲学数学原理》中阐述了模拟物体如何加速的三个运动定律。这些定律构成了经典物理学的基础。
+		</p>
+
+		<details class='derive'>
+			<summary>假设、理论和定律</summary>
+			<p>
+				科学不会产生不变的真理。科学是一个不断发现的过程，每一个新的解释都有可能改进以前的解释。假设、理论和定律可能是正确的，但不可能 100% 确定地知道任何事情。
+			</p>
+			<br>
+			<p>
+				现象是可观察到的事件，例如行星轨道、静电和乳糖不耐症 。
+			</p>
+			<p>
+				假设是对现象的可能解释 。
+			</p>
+			<p>
+				理论是一种经过多次检验且从未被证明是错误的假设。理论是解释。他们回答了这个问题：为什么会出现这种现象？例子包括：量子场论、大爆炸理论、进化论和细菌理论。
+			</p>
+			<br>
+			<p>
+				科学定律 也是基于许多测试的结果，但定律并不能解释现象发生的原因。相反，法律是对在有限的条件下已经发生的事情和将要发生的事情的一般描述。
+				<li>
+					法律预测自然现象的行为。
+				</li>
+				<li>
+					法律仅在有限的条件下才准确。
+				</li>
+				<li>
+					定律通常是数学方程或规则。
+				</li>
+				<p>
+					几乎所有定律都可以在物理科学中找到。一些例子有：欧姆定律、万有引力、库仑定律和基尔霍夫定律。
+				</p>
+			</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<strong>问:</strong> 为什么科学定律在生命科学中如此罕见？
+			<details>
+				<summary>回答</summary>
+				<p>
+					大多数生物现象都太复杂，无法用数学来解释。
+				</p>
+			</details>
+			<br>
+			<br>
+			<br>
+			<br>
+			<p>
+				尼古拉斯·哥白尼观察到行星的运动后，发表了行星绕太阳旋转的观点。这个想法经过多次测试，从未被证明是错误的。六十年后，约翰内斯·开普勒发现了一个方程，可以预测行星如何绕太阳运行。
+			<strong>问:</strong> 从上面的段落中找出一个现象、假设、理论和规律。
+			<details>
+				<summary>回答</summary>
+				<p>
+					<strong>现象</strong>: 行星运动
+					<br><strong>假说</strong>: 行星绕太阳公转
+					<br><strong>理论</strong>: 行星绕太阳公转
+					<br><strong>定律</strong>: 开普勒方程
+				</p>
+			</details>
+			<br>
+			<br>
+			<br>
+			<br>
+			<strong>问:</strong> 科学模型怎么样？这是什么字呢
+			<details>
+				<summary>回答</summary>
+				<p>
+					<strong>科学模型</strong> 是现实某个方面的简化表示。模型帮助我们学习新事物、预测复杂系统的行为或指导未来的研究。物理学中的模型通常采用方程的形式，但它们也可以是一组规则或物理事物。
+				</p>
+				<p>
+					一般来说，模型显然与现实不相符，但如果误差很小，模型仍然有价值。
+				</p>
+			</details>
+		</details>
+
+		<h1 class='underlined'>牛顿第一定律：惯性</h1>
+		<p class="quote">
+			“除非受到净外力的作用，否则物体要么保持静止，要么继续以恒定速度移动。”
+		</p>
+		<div class="definition">
+			所有物质都具有 <strong>惯性 </strong>.
+			的属性。物质保持静止或继续运动，直到有力使其加速。
+		</div>
+		<p>
+			大多数人已经对惯性有了强烈的直观理解。你可能知道移动很重的东西很困难，而移动很轻的东西很容易。这就是惯性。
+		</p>
+		<!-- You probably know that an object with a large mass has more resistance to acceleration. -->
+		<!-- <p>
+			Most people already have a strong intuitive understanding of inertia.
+			Yet, obvious fundamental concepts like inertia are still important to state explicitly.
+			As we learn more physics you may find your intuition about seemingly obvious concepts misleading.
+			Physics has some exciting and strange ways of explaining the nature of space, time, gravity, speed, mass, and touch.
+		</p> -->
+
+		<div class='example'>
+			<p>
+				地球绕太阳运行了数十亿年，从未停止过。显然，太空中的物体遵循牛顿第一定律。
+			</p>
+			<strong>问:</strong> 地球上的物体似乎不遵循牛顿第一定律。是什么导致地球上的物体总是静止不动？
+				<summary>回答</summary>
+				<p>
+					摩擦力会减慢速度。当空气粒子撞击快速移动的物体时，物体减速，空气加速。这使得运动分散，但运动仍然存在。
+				</p>
+			</details>
+		</div>
+
+		<div class="example hide-on-mobile">
+			<style>
+				.fixed {
+					position: fixed;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					width: 100%;
+					height: 100%;
+				}
+
+				.static {
+					position: static;
+					top: 100px;
+					left: 100px;
+					z-index: 1;
+					width: 100px;
+					height: 100px;
+				}
+			</style>
+			<div style="height: 100px;">
+				<svg id="force-box" class="center" width="100" height="100">
+					<g id="rect" transform='translate(20 20)' stroke-width='2' stroke='#000' fill="#000">
+						<path id="right-vector" d="M40 20 h 0" />
+						<path id="left-vector" d="M0 20 h 0" />
+						<path id="up-vector" d="M20 0 v 0" />
+						<path id="down-vector" d="M20 40 v 0" />
+						<rect x="0" y="0" width="60" height="60" fill="#f45" />
+						<text x="30" y="30" fill="#fff" text-anchor="middle" dominant-baseline="middle" font-size='25px' stroke='none'>m</text>
+					</g>
+				</svg>
+			</div>
+			<p>
+				按 <strong>E</strong> 模拟质量。 然后按 <strong>WASD</strong> 对质量施加力。想象屏幕是有摩擦的地面，你在用力拖着这个物体运动。
+			</p>
+			<strong>模拟:</strong> 当您不按键时，是什么导致物体停止
+			<details>
+				<summary>观察</summary>
+				<p>
+					只有存在力时，物体才会改变速度。在这种情况下，摩擦会在与质量速度相反的方向上施加力。
+				</p>
+			</details>
+		</div>
+
+		<h1 class='underlined'>牛顿第二定律：力</h1>
+
+		<p class="quote">
+			“作用在物体上的外力 F 的矢量和等于该物体的质量 m 乘以该物体的加速度矢量。”
+		</p>
+		<p>
+			牛顿第二定律定义了一个新术语，称为力。物体沿着施加在其上的力的总和的方向加速。身体的质量决定了感受到的加速度有多大。
+		</p>
+		<div class='definition'>
+			<svg class='center' width="300" height="120">
+				<defs>
+					<g id="vector">
+						<line x1="0" y1="0" x2="0" y2="45" style="stroke:#000;stroke-width:2" />
+						<polygon points="0,50 -5,42 0,43 5,42" style="fill:#000;" />
+					</g>
+				</defs>
+				<g transform='translate(100 20) rotate(0)'>
+					<rect x="0" y="0" width="80" height="80" stroke='black' stroke-width='2' fill="#fff" />
+					<text x="40" y="40" fill="black" text-anchor="middle" dominant-baseline="middle" font-size='28px'>m</text>
+				</g>
+				<use xlink:href="#vector" transform='translate(100 60) rotate(90)' />
+				<text x="40" y="60" font-size='25px' text-anchor="middle" dominant-baseline="middle">F</text>
+				<use xlink:href="#vector" transform='translate(180 80) rotate(-90)' />
+				<text x="240" y="80" font-size='25px' text-anchor="middle" dominant-baseline="middle">F</text>
+				<use xlink:href="#vector" transform='translate(180 40) rotate(-90)' />
+				<text x="240" y="40" font-size='25px' text-anchor="middle" dominant-baseline="middle">F</text>
+			</svg>
+			<h2>
+				$$\sum F=ma$$
+			</h2>
+			<p>
+				\( F \) = 力 [N, kg m/s²] <em>矢量</em>
+				<br>推力或拉力
+			</p>
+			<p>
+				\(m\) = 质量 [kg]
+			</p>
+			<p>
+				\(a\) = 加速度 [m/s²] <em>矢量</em>
+			</p>
+		</div>
+		<p>\( \sum \) ： 代表数字的总和（希腊字母 Sigma）。这意味着将所有力相加以获得合力。</p>
+		$$\sum F=F_{1}+F_{2}+F_{3}+...$$
+		<p>如果左侧有 5 N 的力，右侧有 20 N 的力，我们可以通过将它们相加得到合力。力是矢量，所以左边的力应该是负的。</p>
+		$$\sum F= - 5 \, \mathrm{N} + 20 \, \mathrm{N} $$
+		$$\sum F= 15 \, \mathrm{N}$$
+
+		<div class='example'>
+			<strong>示例:</strong> 一个球的质量为 0.43 kg。求球因空气摩擦而受到 1 N 的净力（总力）时的加速度。
+			<details>
+				<summary>解决方案</summary>
+				<div class="col-group">
+					<div>
+						$$m = 0.43\,\mathrm{kg}$$ $$\sum F = 1\,\mathrm{N}$$ $$a = \, ?$$
+						<br>
+					</div>
+					<div>
+						$$\sum F=ma$$ $$\frac{\sum F}{m}=a$$ $$\frac{1 \, \mathrm{N}}{0.43 \, \mathrm{kg}}=a$$
+						$$\frac{1 \, \mathrm{kg \frac{m}{s^2}}} {0.43 \, \mathrm{kg} }=a$$ $$2.33 \, \mathrm{\tfrac{m}{s^2}}=a$$
+					</div>
+				</div>
+			</details>
+		</div>
+
+		<div class='example'>
+			<svg viewBox="-25 0 550 150">
+				<rect x="-25" y="80" width="600" height="200" style="fill:#adf" />
+				<g transform='translate(220 20)'>
+					<rect x="0" y="0" width="80" height="80" stroke='black' stroke-width='2' fill="#f45" />
+					<text x="40" y="40" fill="#fff" text-anchor="middle" dominant-baseline="middle" font-size='20px'>100 kg</text>
+				</g>
+				<use xlink:href="#vector" transform='translate(220 60) rotate(90)' />
+				<text x="110" y="65" fill="black">2000 N</text>
+				<use xlink:href="#vector" transform='translate(300 60) rotate(-90)' />
+				<text x="355" y="65" fill="black">1900 N</text>
+			</svg>
+			<strong>示例:</strong> 一艘静止的 100 公斤的船被 2000 N 的风力向左推。水流向右产生 1900 N 的力。船如何加速？6 秒内船能行驶多远？
+			<details>
+				<summary>解决方案</summary>
+				$$ \text{向下或向左的向量为负。}$$
+				$$\sum F=ma$$ $$-2000+1900=(100)(a)$$
+				$$-100=(100)(a)$$
+				$$-1 \mathrm{\tfrac{m}{s^{2}}}= a$$
+				$$ \text{船将向左加速。}$$ $$ u = 0 $$ $$ \Delta x = ?$$ $$ \Delta t = 6\mathrm{s}$$
+				$$ \Delta x = u\Delta t+ \tfrac{1}{2} a \Delta t^{2}$$
+				$$ \Delta x = (0)(6)+\tfrac{1}{2} (-1)(6)^{2}$$
+				$$ \Delta x = \tfrac{1}{2} (-1)(6)^{2}$$
+				$$ \Delta x = -18 \, \mathrm{m}$$
+				$$ \text{船将向左移动 18 米。}$$
+			</details>
+		</div>
+		<div class='example'>
+			<strong>问:</strong> 如果我对物体施加力，它就会加速。如果我对相同的质量的物体施加更大的力会发生什么？
+			<!-- Use <a href="../../review/solving/#proportions">proportions</a>. -->
+			<details>
+				<summary>回答</summary>
+
+				<p>
+					质量是恒定的，所以我们可以假设它是单位1。
+				</p>
+				$$F=ma$$
+				$$F=a$$
+				$${\Uparrow \atop F} {\atop =} {\Uparrow \atop a} $$
+				<p>
+					力和加速度成正比。增加 F 将导致 a 成比例增加。
+				</p>
+
+				<!-- $$ \text{m is constant}$$ $$ \text{F and a are directly proportional}$$
+				$${\Uparrow \atop F} {\atop =} { \atop m} {\Uparrow \atop a} $$
+				$$ \text{Increasing F will increase a}$$ -->
+
+			</details>
+		</div>
+		<div class='example'>
+			<strong>问:</strong> 如果我对一个物体施加 100 N 的力，它的加速度为 2 m/s²。如果我在保持力相同的情况下将质量加倍，会发生什么？
+			<!-- Use <a href="../../review/solving/#proportions">proportions</a>. -->
+			<details>
+				<summary>回答</summary>
+				<p>
+					质量是恒定的，所以我们可以假设它是单位1。
+				</p>
+				$$F=ma$$
+				$$1=ma$$
+				$$1=(2m)\left(\tfrac{1}{2} a \right)$$
+				<p>
+					质量和加速度成反比。m 加倍将导致 a 减半。
+				</p>
+				<!-- $$ \text{F is constant}$$ $$ \text{m and a are inversely proportional}$$
+				$${ \atop F} {\atop =} { \Downarrow \atop m} {\Uparrow \atop a} $$
+				$$ \text{doubling m will half a}$$ $$ a = 1 \, \mathrm{\tfrac{m}{s^2}}$$ -->
+
+			</details>
+		</div>
+
+		<h1 class='underlined'>牛顿第三定律：
+			相对作用力</h1>
+		<p class="quote">
+			“当一个物体对第二个物体施加力时，第二个物体同时对第一个物体施加大小相等、方向相反的力。”
+		</p>
+		<div class='definition'>
+			<br>
+			<svg viewBox="-60 0 400 100">
+				<rect x="40" y="1" width="100" height="98" stroke='#000' style="stroke-width:1.5;fill:#fff;" />
+				<rect x="140" y="15" width="70" height="70" stroke='#000' fill="var(--def-accent-color)" style="stroke-width:1.5;" />
+				<use xlink:href="#vector" transform='translate(192.5 50) rotate(90)' />
+				<use xlink:href="#vector" transform='translate(87.5 50) rotate(-90)' />
+				<text x="110" y="35" fill="black" text-anchor="middle" dominant-baseline="middle" font-size='20px'>F
+					<tspan font-size="0.7em" dy="5" dx="-5">1</tspan>
+				</text>
+				<text x="172" y="37" fill="black" text-anchor="middle" dominant-baseline="middle" font-size='20px'>F
+					<tspan font-size="0.7em" dy="5" dx="-5">2</tspan>
+				</text>
+			</svg>
+			$$F_1 = -F_2$$
+			<p>如果你推某物，它会以相同的力推回去，但方向相反。力量总是成对出现，并且力量大小相等，方向相反。</p>
+		</div>
+		<p>大多数情况下，力对来自接触的物体，但对于非接触力，如重力，仍然遵循这一定律。
+		</p>
+		<div class='example'>
+			<strong>问:</strong>用 1000 N 的力向下推地面。描述地面作用在你身上的力的大小和方向。
+			<details>
+				<summary>回答</summary>
+				<p>地面施加的力与你施加在地面上的力大小相等且方向相反。大小为 1000 N。方向向上。</p>
+			</details>
+		</div>
+		<div class='example'>
+			<strong>问:</strong> 一名拳击手的手套向另一名拳击手的脸部施加 140 N 的力。描述面部施加到手套上的力的大小。
+			<details>
+				<summary>回答</summary>
+				<p>
+					当拳头打脸时，脸也在打拳头。这是相对的
+				</p>
+				<p>
+					总之，力是大小相等、方向相反的。所以面部施加到手套上的力的大小等于手对面部的力的大小，为 140 N。
+				</p>
+			</details>
+
+		<!-- <div class='example'>
+				<strong>Example:</strong> You (100 kg) are floating away from your spaceship. In order to return to the ship you throw your 2 kg space
+				laser away. As you are throwing the space laser, it accelerates at 40 m/s². How much acceleration do you feel during the
+				throw?
+				<details>
+					<summary>solution</summary>
+					<p>The force the space laser feels is equal and opposite to the force you feel.
+					</p>
+					$$ \text{space laser}$$ $$F = ma $$ $$F=(2)(40)$$ $$F=80 \, \mathrm{N}$$
+					<br> $$ \text{you}$$ $$F = ma $$ $$-80 = 100a$$ $$-0.8 \mathrm{\tfrac{m}{s^2}}=a$$
+				</details>
+			</div> -->
+
+	</article>
+	<footer>
+		<a href="../../../主页面.html">返回</a>
+	</footer>
+
+	<script>
+		renderMathInElement(document.body);
+	</script>
+	<script src="wasd.js"></script>
+	<!-- <script src='../../../lib/matter.min.js'></script> -->
+	<!-- <script src="matterforce.js"></script> -->
+</body>
+
+</html>
