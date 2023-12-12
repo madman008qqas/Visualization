@@ -12,7 +12,7 @@
   <meta name="twitter:title" content="Physics Notes">
   <meta name="twitter:description" content="Interactive notes for algebra based physics.">
 
-  <title>Forces</title>
+  <title>力</title>
   <link rel="shortcut icon" href="../../../media/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" type="text/css" href="../../../lib/katex/katex.min.css">
   <script src="../../../lib/katex/katex.min.js"></script>
@@ -23,14 +23,13 @@
 <body>
   <header>
     <h1>
-      <a href="../../../">Forces</a>
+      <a href="../../../">力</a>
     </h1>
   </header>
 
   <article>
     <p>
-      Free body diagrams are a technique that helps <a href="https://ciechanow.ski/bicycle/">visualize</a> the force
-      vectors used to solve Newton's second law.
+      自由体图是一种有助于可视化力的技术用于求解牛顿第二定律的向量。
     </p>
     <div class="definition">
       <svg class='center' viewBox="0 0 500 350">
@@ -91,17 +90,14 @@
         </g>
       </svg>
       <p>
-        A <strong>free body diagram</strong> shows all the force vectors on an object.
-        Mass is typically written inside a box, with force vectors pointed away from the box.
+        <strong>自由体图</strong> 显示了物体上的所有力矢量。 质量通常写在盒子里，力矢量指向远离盒子的地方。
       </p>
     </div>
 
     <div class='example'>
-      <strong>Example:</strong> Draw a free body diagram for a 83 kg person holding onto a rope in a game of "Tug of
-      war". The rope is pulling them with a force of 520 N left. The person's feet are countering that with 540 N to the
-      right.
+      <strong>例:</strong> 为一个83公斤重的人画一张自由力图，在“拔河”游戏中抓住绳子。绳索以520N的力拉动它们。人的脚正在用540N来对抗它。
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <svg class='center' width="300" height="120" viewBox="-15 0 285 120">
           <g transform='translate(100 20) rotate(0)'>
             <rect x="0" y="0" width="80" height="80" stroke='black' stroke-width='2' fill="#f65" />
@@ -130,9 +126,9 @@
         <use xlink:href="#vector" transform='translate(180 40) rotate(-90)' />
         <text x="200" y="33" fill="black">300 N</text>
       </svg>
-      <strong>Example:</strong> Use the free body diagram to calculate the mass's acceleration.
+      <strong>例:</strong> 使用自由力图计算质量的加速度。
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         $$\sum F=ma$$
         $$-200\,\mathrm{N}+300\,\mathrm{N}+500\,\mathrm{N}=ma$$
         $$600\,\mathrm{N}=(2\,\mathrm{kg})a$$
@@ -158,12 +154,11 @@
         <use xlink:href="#vector" transform='translate(115 -10) rotate(180)' />
         <text x="125" y="-47" fill="black">F= ? </text>
       </svg>
-      <strong>Example:</strong> The book <a
-        href='https://www.amazon.com/Martian-Novel-Andy-Weir-ebook/dp/B00EMXBDMA'>The Martian</a> by Andy Weir (mass =
-      0.09 kg) is resting on a table (acceleration = zero). The force of gravity produces a downwards force of 0.34 N.
-      What force is required to keep the book at rest on the table?
+      <strong>例:</strong> 安迪·威尔 （Andy Weir） 的 <a
+        href='https://book.douban.com/subject/26586492/'>《火星救援》</a>  的一书（质量 = 0.09 kg）放在桌子上（加速度 = 零）。
+        重力产生 0.34 N 的向下力。 需要什么力才能将书放在桌子上？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         $$\sum F=ma$$ $$F_{N} + F_{g} = ma$$
         $$F_{N} - 0.34\, \mathrm{N} = (0.09\, \mathrm{kg})(0)$$
         $$F_{N} - 0.34\,\mathrm{N} = 0$$
@@ -189,17 +184,16 @@
         <use xlink:href="#vector" transform='translate(180 80) rotate(-90)' />
         <text x="210" y="73" fill="black">78 N</text>
       </svg>
-      <strong>Example:</strong> Use the free body diagram to calculate the acceleration for both the horizontal and the
-      vertical.
+      <strong>例:</strong> 使用自由力图计算水平和垂直受力。
       <details>
-        <summary>solution</summary>
-        $$ \text{vertical}$$
+        <summary>解</summary>
+        $$ \text{垂直}$$
         $$\sum F=ma$$
         $$22 \, \mathrm{N} - 85 \, \mathrm{N} = (16 \, \mathrm{kg})a$$
         $$-63 \, \mathrm{N} = (16 \, \mathrm{kg})a$$
         $$-3.9 \, \mathrm{\tfrac{m}{s^2}} = a$$
 
-        <br> $$ \text{horizontal}$$
+        <br> $$ \text{水平}$$
         $$\sum F=ma$$
         $$78 \, \mathrm{N}+55 \, \mathrm{N}-140 \, \mathrm{N} = (16 \, \mathrm{kg})a$$
         $$-7 \, \mathrm{N} = (16 \, \mathrm{kg})a$$
@@ -208,11 +202,9 @@
     </div>
 
     <div class='example'>
-      <strong>Example:</strong> A red crate is falling, but a parachute is slowing its acceleration to only 2 m/s² down.
-      The force of gravity is 833 N down. The parachute provides 663 N up. Draw a free body diagram and use it to find
-      the mass of the crate.
+      <strong>例:</strong> 一个红色的板条箱正在坠落，但降落伞正在减慢其加速度，仅下降 2 m/s²。 重力向下 833 N。降落伞提供 663 N。绘制一个自由的主体图并使用它来查找 板条箱的质量。
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <svg class='center' width="300" height="200">
           <!-- <rect x="0" y="100" width="300" height="110" style="fill:#ccc" /> -->
           <g transform='translate(100 60) rotate(0)'>
@@ -236,13 +228,11 @@
       </details>
     </div>
 
-    <h1 class='underlined'>The Force of gravity</h1>
+    <h1 class='underlined'>重力</h1>
     <p>
-      <strong>Mass</strong> is a measure of an object's inertia. <strong>Mass</strong> also determines the strength of
-      gravity. Because of gravity all objects are attracted to each other, but we mostly notice the attraction towards
-      the Earth because it is so large and so close.
+      <strong>质量</strong>是物体惯性的量度。<strong>质量</strong>也决定了重力的大小。
     </p>
-    <p>There is a special word to describe the direction of gravity, down.</p>
+    <p>我们平时所说的重力方向都是向下的。</p>
     <div class='definition' style="padding: 0px;">
       <br>
       <svg viewBox="-50 0 600 275" style="padding: 0px; margin-bottom: -25px;">
@@ -257,287 +247,40 @@
         <circle cx="250" cy="880" r="695" fill="var(--def-accent-color)" stroke="#000" stroke-width="2" />
       </svg>
       <div style="padding: 20px; background-color: var(--def-accent-color); border-radius: 1em;">
-        <h1>$$F_g=mg $$</h1> \(F_g\) = the force of gravity, weight [N, newtons, kg m/s²]
-        <em>vector</em>
-        <br>\(m\) = mass [kg]
-        <br>\(g\) = acceleration of gravity on Earth = 9.8 [m/s²]
-        <em>vector</em>
+        <h1>$$F_g=mg $$</h1> \(F_g\) ： 重力 [N, 牛顿, kg m/s²]
+        <em>向量</em>
+        <br>\(m\) ： 质量 [kg]
+        <br>\(g\) ： 重力加速度 = 9.8 [m/s²]
+        <em>向量</em>
       </div>
     </div>
     <p>
-      The force of gravity depends only on the mass of the object because on the surface of the Earth
-      <strong>acceleration from gravity is the same for all objects</strong>. If you aren't on the surface of the Earth,
-      there is a different way to calculate <a
-        href="..\..\gravity\gravitation\index.html#universal-gravitation">gravity</a>.
+      重力仅取决于物体的质量，因为在地球表面，重力加速度对于所有物体都是相同的。
     </p>
 
     <div class="example">
-      <strong>Question:</strong> Why do feathers fall slower than bricks?
+      <strong>问:</strong> 为什么羽毛比砖块落得快？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <p>
-          Air friction produces a force that opposes motion.
-          Feathers have a large surface area compared to their small mass so they have more air friction.
+          空气摩擦产生与运动相反的力。 与它们的小质量相比，羽毛的表面积更大，因此羽毛下落时会产生更多的空气摩擦力。
         </p>
       </details>
     </div>
 
     <div class='example'>
       <p>
-        The acceleration of 9.8 m/s² on the surface of the Earth is just an approximation. The
-        <a href='https://en.wikipedia.org/wiki/Gravity_of_Earth'>gravity of Earth</a> changes a bit depending on where
-        you are.
+        注：地球表面 9.8 m/s² 的加速度只是一个近似值。地球的引力会根据位置而变化
       </p>
-      <details>
-        <summary>
-          <strong>Table:</strong> Comparative gravities in various cities around the world
-        </summary>
-        <table style="text-align: left;">
-          <tr>
-            <th>Location</th>
-            <th>Acceleration in m/s² </th>
-            <th>Acceleration in ft/s²</th>
-          </tr>
-          <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Amsterdam" class="extiw" title="wikipedia:Amsterdam">Amsterdam</a>
-            </td>
-            <td>9.813</td>
-            <td> 32.19</td>
-          </tr>
-          <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Athens" class="extiw" title="wikipedia:Athens">Athens</a></td>
-            <td>9.800</td>
-            <td> 32.15</td>
-          </tr>
-          <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Auckland" class="extiw" title="wikipedia:Auckland">Auckland</a>
-            </td>
-            <td>9.799</td>
-            <td> 32.15</td>
-          </tr>
-          <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Bangkok" class="extiw" title="wikipedia:Bangkok">Bangkok</a></td>
-            <td>9.783</td>
-            <td> 32.1</td>
-          </tr>
-          <tr>
-            <td><a href="http://en.wikipedia.org/wiki/Brussels" class="extiw" title="wikipedia:Brussels">Brussels</a>
-            </td>
-            <td>9.811</td>
-            <td> 32.19</td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Buenos_Aires" class="extiw" title="wikipedia:Buenos Aires">Buenos
-                Aires</a> </td>
-            <td>9.797 </td>
-            <td> 32.14 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Calcutta" class="extiw" title="wikipedia:Calcutta">Calcutta</a>
-            </td>
-            <td>9.788 </td>
-            <td> 32.11 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Cape_Town" class="extiw" title="wikipedia:Cape Town">Cape
-                Town</a> </td>
-            <td>9.796 </td>
-            <td> 32.14 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Chicago" class="extiw" title="wikipedia:Chicago">Chicago</a>
-            </td>
-            <td>9.803 </td>
-            <td> 32.16 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Copenhagen" class="extiw"
-                title="wikipedia:Copenhagen">Copenhagen</a> </td>
-            <td>9.815 </td>
-            <td> 32.2 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Frankfurt" class="extiw"
-                title="wikipedia:Frankfurt">Frankfurt</a> </td>
-            <td>9.810 </td>
-            <td> 32.19 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Havana" class="extiw" title="wikipedia:Havana">Havana</a> </td>
-            <td>9.788 </td>
-            <td> 32.11 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Helsinki" class="extiw" title="wikipedia:Helsinki">Helsinki</a>
-            </td>
-            <td>9.819 </td>
-            <td> 32.21 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Istanbul" class="extiw" title="wikipedia:Istanbul">Istanbul</a>
-            </td>
-            <td>9.808 </td>
-            <td> 32.18 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Jakarta" class="extiw" title="wikipedia:Jakarta">Jakarta</a>
-            </td>
-            <td>9.781 </td>
-            <td> 32.09 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Kuwait" class="extiw" title="wikipedia:Kuwait">Kuwait</a> </td>
-            <td>9.793 </td>
-            <td> 32.13 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Lisbon" class="extiw" title="wikipedia:Lisbon">Lisbon</a> </td>
-            <td>9.801 </td>
-            <td> 32.16 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/London" class="extiw" title="wikipedia:London">London</a> </td>
-            <td>9.812 </td>
-            <td> 32.19 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Los_Angeles" class="extiw" title="wikipedia:Los Angeles">Los
-                Angeles</a> </td>
-            <td>9.796 </td>
-            <td> 32.14 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Madrid" class="extiw" title="wikipedia:Madrid">Madrid</a> </td>
-            <td>9.800 </td>
-            <td> 32.15 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Manila" class="extiw" title="wikipedia:Manila">Manila</a> </td>
-            <td>9.784 </td>
-            <td> 32.1 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Mexico_City" class="extiw" title="wikipedia:Mexico City">Mexico
-                City</a> </td>
-            <td>9.779 </td>
-            <td> 32.08 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Montr%C3%A9al" class="extiw"
-                title="wikipedia:Montréal">Montréal</a> </td>
-            <td>9.789 </td>
-            <td> 32.12 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/New_York_City" class="extiw" title="wikipedia:New York City">New
-                York City</a> </td>
-            <td>9.802 </td>
-            <td> 32.16 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Nicosia" class="extiw" title="wikipedia:Nicosia">Nicosia</a>
-            </td>
-            <td>9.797 </td>
-            <td> 32.14 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Oslo" class="extiw" title="wikipedia:Oslo">Oslo</a> </td>
-            <td>9.819 </td>
-            <td> 32.21 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Ottawa" class="extiw" title="wikipedia:Ottawa">Ottawa</a> </td>
-            <td>9.806 </td>
-            <td> 32.17 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Paris" class="extiw" title="wikipedia:Paris">Paris</a> </td>
-            <td>9.809 </td>
-            <td> 32.18 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Rio_de_Janeiro" class="extiw"
-                title="wikipedia:Rio de Janeiro">Rio de Janeiro</a> </td>
-            <td>9.788 </td>
-            <td> 32.11 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Rome" class="extiw" title="wikipedia:Rome">Rome</a> </td>
-            <td>9.803 </td>
-            <td> 32.16 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/San_Francisco" class="extiw" title="wikipedia:San Francisco">San
-                Francisco</a> </td>
-            <td>9.800 </td>
-            <td> 32.15 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Singapore" class="extiw"
-                title="wikipedia:Singapore">Singapore</a> </td>
-            <td>9.781 </td>
-            <td> 32.09 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Skopje" class="extiw" title="wikipedia:Skopje">Skopje</a> </td>
-            <td>9.804 </td>
-            <td> 32.17 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Stockholm" class="extiw"
-                title="wikipedia:Stockholm">Stockholm</a> </td>
-            <td>9.818 </td>
-            <td> 32.21 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Sydney" class="extiw" title="wikipedia:Sydney">Sydney</a> </td>
-            <td>9.797 </td>
-            <td> 32.14 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Taipei" class="extiw" title="wikipedia:Taipei">Taipei</a> </td>
-            <td>9.790 </td>
-            <td> 32.12 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Tokyo" class="extiw" title="wikipedia:Tokyo">Tokyo</a> </td>
-            <td>9.798 </td>
-            <td> 32.15 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Vancouver" class="extiw"
-                title="wikipedia:Vancouver">Vancouver</a> </td>
-            <td>9.809 </td>
-            <td> 32.18 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Washington,_D.C." class="extiw"
-                title="wikipedia:Washington, D.C.">Washington, D.C.</a> </td>
-            <td>9.801 </td>
-            <td> 32.16 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Wellington" class="extiw"
-                title="wikipedia:Wellington">Wellington</a> </td>
-            <td>9.803 </td>
-            <td> 32.16 </td>
-          </tr>
-          <tr>
-            <td> <a href="http://en.wikipedia.org/wiki/Zurich" class="extiw" title="wikipedia:Zurich">Zurich</a> </td>
-            <td>9.807 </td>
-            <td> 32.18 </td>
-          </tr>
-        </table>
-      </details>
+
       <br>
-      <strong>Question:</strong> What factors might explain why the measured acceleration of gravity changes in
-      different locations on the surface of Earth?
+      <strong>问:</strong> 哪些因素可以解释为什么在地球表面的不同位置测得的重力加速度不同？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <p>
-          <li>Gravity is slightly weaker at higher elevation because you are farther from the center of the Earth.</li>
+          <li>在较高的海拔高度，重力稍弱，因为你离地球中心更远。</li>
           <br>
-          <li>Near the equator gravity feels weaker because the Earth's rotation adds a centrifugal force.</li>
+          <li>在赤道附近，重力感觉较弱，因为地球的自转增加了离心力。</li>
         </p>
       </details>
     </div>
@@ -545,10 +288,9 @@
       <a href="https://www.amazon.com/Three-Body-Problem-Cixin-Liu/dp/0765382032">
         <img class="book-cover" src="thethreebodyproblem.jpg" alt="The Three-Body Problem" width="150" height="237" />
       </a>
-      <strong>Example:</strong> The Three-Body Problem by Cixin Liu has a mass of 0.44 kg. What force of gravity does
-      the book have?
+      <strong>例:</strong> 刘慈欣的《三体》的质量为0.44 kg。这本书的重力是多少？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         $$F_g=mg$$ $$F_g=(0.44 \, \mathrm{kg} )(9.8\, \mathrm{\tfrac{m}{s^2}})$$ $$F_g=4.3 \, \mathrm{N}$$
       </details>
     </div>
@@ -557,42 +299,35 @@
       <a href="https://www.amazon.com/Cats-Cradle-Novel-Kurt-Vonnegut/dp/038533348X">
         <img class="book-cover" src="catscradle.jpg" alt="Cat's Cradle" width="150" height="241" />
       </a>
-      <strong>Example:</strong> How much mass does the book Cat's Cradle by Kurt Vonnegut have if it feels a force of
-      gravity of 1.8 N?
+      <strong>例:</strong> 库尔特·冯内古特 （Kurt Vonnegut） 的《猫的摇篮》一书所受到的重力为1.8 N,那么它的质量为多少？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         $$F_g=mg$$ $$\frac{F_g}{g}=m$$
         $$\frac{1.8 \,\mathrm{N}}{9.8\, \mathrm{\tfrac{m}{s^2}}}=m$$
         $$0.18 \, \mathrm{kg}=m$$
       </details>
     </div>
 
-    <h3 class='underlined'>Weight and Mass</h3>
+    <h3 class='underlined'>重量和质量</h3>
     <p>
-      Another word for the force of gravity is <strong>weight</strong>. An object on the <a
-        href="https://www.youtube.com/watch?v=az9nFrnCK60">Moon</a> would weigh less than it does on Earth because of
-      the lower gravity, but it would still have the same mass.
+      重力的另一个词是重量。月球上的物体会比地球上的物体轻，因为月球上具有较低的重力，但它仍然具有相同的质量。
     </p>
-    $$F_g = \mathrm{weight}$$
+    $$F_g ： \mathrm{重量}$$
     <p>
-      Earth's gravity does extend into space, but it decreases with distance. It is about ~90% for astronauts in orbit
-      around the Earth, but they don't notice any gravity because they are in a freefall.
+      地球的引力会延伸到太空，但它会随着距离的增加而减小。对于在轨宇航员来说，这一比例约为~90% 在地球周围，但它们没有注意到任何重力，因为它们处于自由落体状态。
     </p>
     <p>
-      <strong>Freefall</strong> means that you are just letting gravity accelerate you without any opposing forces. To
-      keep from falling we are careful to always counter the force of gravity. This can be done with a parachute, or a
-      jet pack, or just the ground.
+      自由落体意味着你只是让重力加速你，没有任何相反的力量。
     </p>
     <div class='example'>
       <a href="https://www.amazon.com/Name-Wind-Patrick-Rothfuss/dp/0756404746/">
         <img class="book-cover" src="thenameofthewind.jpg" alt="The Name of the Wind" width="150" height="221" />
       </a>
-      <strong>Question:</strong> The Name of the Wind by Patrick Rothfuss has a mass of 0.34 kg. How does its mass and
-      weight change in a freefall on Earth?
+      <strong>问:</strong> 帕特里克·罗斯福斯 （Patrick Rothfuss） 的《风之名》的质量为 0.34 公斤。它的质量和在地球上自由落体时的重量变化？
       <details>
-        <summary>answer</summary>
-        <p>An object's mass doesn't change when it is falling.</p>
-        <p>Weight just means the force of gravity, which also doesn't change in a short freefall.</p>
+        <summary>解</summary>
+        <p>物体下落时质量不会改变。</p>
+        <p>重量只是意味着重力，它在短时间的自由落体中也不会改变。</p>
         <!-- $$F_{g}=mg$$ $$F_{g}=(0.34)(9.8)$$ $$F_{g}=3.33 \, \mathrm{N}$$ -->
       </details>
     </div>
@@ -600,10 +335,9 @@
       <a href="https://www.amazon.com/Seveneves-Neal-Stephenson/dp/0062334514/">
         <img class="book-cover" src="seveneves.png" alt="Seveneves" width="150" height="225" />
       </a>
-      <strong>Example:</strong> The hardcover version of Seveneves by Neal Stephenson has a mass of 0.95 kg.
-      What is the force of gravity felt by the book on Earth? What about on the Moon?
+      <strong>例:</strong> 尼尔·斯蒂芬森 （Neal Stephenson） 所作的《Seveneves》的质量为 0.95 千克。 这本书在地球上受到的重力大小为多少？在月球上呢？
       <details>
-        <summary>Local Massive Objects Surface Gravity</summary>
+        <summary>天体表面重力</summary>
         <style>
           th {
             background: #fff;
@@ -716,7 +450,7 @@
         <table>
           <tr>
             <th class="black"></th>
-            <th>name</th>
+            <th>名称</th>
             <th>g (m/s²)</th>
           </tr>
           <tr>
@@ -727,7 +461,7 @@
                 </div>
               </a>
             </td>
-            <td>Sun</td>
+            <td>太阳</td>
             <td>275</td>
           </tr>
           <tr>
@@ -736,7 +470,7 @@
                 <div class="planet mercury"></div>
               </a>
             </td>
-            <td>Mercury</td>
+            <td>水星</td>
             <td>3.7</td>
           </tr>
           <tr>
@@ -745,7 +479,7 @@
                 <div class="planet venus"></div>
               </a>
             </td>
-            <td>Venus</td>
+            <td>金星</td>
             <td>8.9</td>
           </tr>
           <tr>
@@ -755,7 +489,7 @@
                 <div class="planet earth"></div>
               </a>
             </td>
-            <td>Earth</td>
+            <td>地球</td>
             <td>9.8</td>
           </tr>
           <tr>
@@ -764,7 +498,7 @@
                 <div class="planet moon"></div>
               </a>
             </td>
-            <td>Moon</td>
+            <td>月球</td>
             <td>1.6</td>
           </tr>
           <tr>
@@ -773,7 +507,7 @@
                 <div class="planet mars"></div>
               </a>
             </td>
-            <td>Mars</td>
+            <td>火星</td>
             <td>3.7</td>
           </tr>
           <tr>
@@ -782,7 +516,7 @@
                 <div class="planet jupiter"></div>
               </a>
             </td>
-            <td>Jupiter</td>
+            <td>木星</td>
             <td>25.8</td>
           </tr>
           <tr>
@@ -793,7 +527,7 @@
                 </div>
               </a>
             </td>
-            <td>Saturn</td>
+            <td>土星</td>
             <td>10.4</td>
           </tr>
           <tr>
@@ -804,7 +538,7 @@
                 </div>
               </a>
             </td>
-            <td>Uranus</td>
+            <td>天王星</td>
             <td>8.7</td>
           </tr>
           <tr>
@@ -813,15 +547,14 @@
                 <div class="planet neptune"></div>
               </a>
             </td>
-            <td>Neptune</td>
+            <td>海王星</td>
             <td>11.2</td>
           </tr>
         </table>
       </details>
       <details>
-        <summary>solution</summary>
-        <p>Weight and force of gravity mean the same thing. A planet's gravity field determines your weight, but not
-          your mass.</p>
+        <summary>解</summary>
+        <p>重量和重力意味着同样的事情。行星的重力场决定了你的体重，但不是你的质量。</p>
         <ul class="listing">
           <li>
             <div>
@@ -836,50 +569,9 @@
         </ul>
       </details>
     </div>
-    <div class='example'>
-      <details class='derive'>
-        <summary>Converting kilograms (kg) into pounds (lbs) </summary>
-        $$1 \, \mathrm{kg} = 2.2\, \mathrm{lbs} \quad \scriptsize \text{(On Earth)}$$
-        $$1 \, \mathrm{N} = 0.2248\, \mathrm{lbs}$$
-        <p>
-          Pounds are a unit of force and kilograms are a unit of mass.
-          You can't convert directly between them because they are different concepts, but you can use the force of
-          gravity equation to find a conversion that works for only Earth's surface.
-        </p>
-      </details>
-      <a href="https://www.amazon.com/Uprooted-Naomi-Novik/dp/0804179034">
-        <img class="book-cover" src="uprooted.jpg" alt="Uprooted" width="150" height="228" />
-      </a>
-      <strong>Example:</strong> Uprooted by Naomi Novik is resting on a table. The shipping weight is 1.2 pounds.
-      What is the book's mass in kilograms on Earth? On Mars?
-      <details>
-        <summary>solution</summary>
-        <p>
-          Mass doesn't depend on gravity, so it's the same everywhere.
-        </p>
-        $$ 1.2\,\mathrm{lbs} \left( \frac{1\,\mathrm{kg}}{2.2\,\mathrm{lbs}} \right)= 0.\overline{54}\,\mathrm{kg}$$
-        $$ m = 0. \overline{54} \, \mathrm{kg} $$
-      </details>
-      <br>What is the weight of the book in Newtons on Earth? On Mars?
-      <details>
-        <summary>solution</summary>
-        <ul class="listing">
-          <li>
-            <div>
-              $$\text{weight on Earth}$$ $$F_{g}=mg$$ $$F_{g}=(0.\overline{54})(9.8)$$ $$F_{g}=5.35\, \mathrm{N}$$
-            </div>
-          </li>
-          <li>
-            <div>
-              $$\text{weight on Mars}$$ $$F_{g}=mg$$ $$F_{g}=(0.\overline{54})(3.711)$$ $$F_{g}=2.02\, \mathrm{N}$$
-            </div>
-          </li>
-        </ul>
-      </details>
-    </div>
 
-    <h3 class='underlined' id="normal-force">The Normal Force</h3>
-    <p>Typically a normal force will balance the force of gravity to keep an object from accelerating up or down.</p>
+    <h3 class='underlined' id="normal-force">支持力</h3>
+    <p>通常，支持力会平衡重力，以防止物体向上或向下加速。</p>
     <div class="definition" style="padding: 0px;">
       <svg viewBox="0 -10 600 250" style="padding: 0px; margin-bottom: -25px;">
         <defs>
@@ -907,11 +599,10 @@
 
       <div style="padding: 20px; background-color: var(--def-accent-color); border-radius: 1em;">
         <p>
-          A <strong>normal force</strong> occurs when two objects are in contact. It is perpendicular to the point of
-          contact. A normal force prevents objects from passing through each other.
+          当两个物体接触时，会发生支持力。它垂直于接触面，防止物体相互穿过。
         </p>
         <p>
-          A normal force will scale to a value that will keep the net force and acceleration zero.
+          支持力将缩放到一个值，该值将使净力和加速度保持零。
         </p>
 
       </div>
@@ -920,16 +611,13 @@
       </div> -->
     </div>
     <p>
-      Normal forces come from the combined effect of electromagnetic forces and the Pauli exclusion principle.
+      法向力来自电磁力和泡利不相容原理的综合作用。
     </p>
     <p>
-      The <a href="..\..\electromagnetism\electrostatics\index.html">electromagnetic force</a> allows chemical bonds to
-      form. These bonds give solid matter its rigid structure, which is required for normal forces.
+      电磁力是在化学键的形成和维持过程中发挥作用的基础力量。这些键使固体物质具有刚性结构，这是法向力所必需的。
     </p>
     <p>
-      At the atomic scale, particles can't pass through each other primarily because of a quantum mechanical effect
-      called the <a href="https://en.wikipedia.org/wiki/Pauli_exclusion_principle">Pauli exclusion principle </a>. The
-      Pauli exclusion principle is mostly responsible for keeping particles, like electrons, separate.
+      在原子尺度上，粒子不能相互穿过，主要是因为量子力学效应，被称为泡利不相容原理。泡利不相容原理主要负责保持粒子（如电子）分离。
     </p>
 
     <div class="example hide-on-mobile">
@@ -980,31 +668,29 @@
         </svg>
       </div>
       <p>
-        Press <strong>E</strong> to activate the mass. Then press <strong>WASD</strong> to apply forces to the mass.
-        Imagine that gravity is pointed towards the bottom of the page.
+        按 E 激活质量。然后按 WASD 对质量施加力。重力指向页面底部，页面不光滑且对物块有支持力。
       </p>
-      <strong>Question:</strong> What force keeps the mass from exiting the screen?
+      <strong>问:</strong> 什么力让物块在受重力的情况下得以维持在页面上而没有离开屏幕？
       <details>
-        <summary>answer</summary>
+        <summary>答</summary>
         <p>
-          The normal force.
+          支持力
         </p>
       </details>
       <br>
-      <strong>Question:</strong> Why does pressing A and D at the same time do nothing?
+      <strong>问:</strong> 为什么同时按住ad（或ws）时会静止
       <details>
-        <summary>answer</summary>
+        <summary>答</summary>
         <p>
-          The left and right force cancel each other out.
+          左右（上下）的力相互抵消
         </p>
       </details>
     </div>
 
     <div class='example'>
-      <strong>Example:</strong> You are accelerating up in an elevator at 2&nbsp;m/s². If your mass is 100&nbsp;kg, what
-      is the normal force you feel from the elevator?
+      <strong>例:</strong> 您正在以 2 m/s² 的速度在电梯中加速。如果你的体重是 100 千克，那么电梯对您的支持力是多少？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <svg class='center' width="280" height="200">
           <line x1="0" y1="140" x2="280" y2="140" stroke="#000" stroke-width="2" />
           <g transform='translate(100 60) rotate(0)'>
@@ -1029,13 +715,11 @@
       </details>
     </div>
     <div class='example'>
-      <strong>Example:</strong> A 20 kg box is at rest on a horizontal sidewalk. Find the force of gravity and the
-      normal force on the box.
+      <strong>例:</strong> 一个 20 千克重的箱子停在平面上。求出重力和箱子所受到的支持力。
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <p>
-          In the simple case of a flat horizontal surface with no vertical acceleration the force of gravity will always
-          be equal and opposite to the normal force.
+      在没有垂直加速度的平坦水平表面的简单情况下，重力将始终保持与支持力相等且相反。
         </p>
         <svg class="center" width="240" height="225">
           <line x1="0" y1="150" x2="200" y2="150" stroke="#000" stroke-width="2" />
@@ -1077,11 +761,9 @@
           <text x="0" y="70" text-anchor="middle" fill="black">Fg</text>
         </g>
       </svg>
-      <strong>Example:</strong> A 20 kg box is at rest on a steep sidewalk. The sidewalk is at an angle 20 degrees from
-      horizontal. Find the force of gravity and the normal force on the box. What is the acceleration of the box?
-      (assume no friction)
+      <strong>例:</strong> 一个 20 千克重的箱子放在斜面上。斜面与水平呈 20 度角。求盒子的重力和所受的支持力以及加速度（假设斜面光滑，没有摩擦）
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <ul class="listing">
           <li>
             <div>
@@ -1112,14 +794,13 @@
           </li>
         </ul>
         <p>
-          Separate the gravity <a href="..\..\review\vectors\index.html">vector</a> into components parallel and
-          perpendicular to the ground. Acceleration is zero in the perpendicular direction.
+          将重力矢量分成平行和垂直于地面。垂直方向上的加速度为零。
         </p>
         <ul class="listing">
           <li>
             <div>
               <p>
-                $$\text{perpendicular to ground}$$
+                $$\text{垂直于地面}$$
               </p>
               $$F_{g\perp}=F_{g}\cos(20)$$ $$F_{g\perp}=(196)\cos(20)$$ $$F_{g\perp}=184 \, \mathrm{N}$$
               <br> $$\sum F_{\perp}=ma$$
@@ -1133,7 +814,7 @@
           <li>
             <div>
               <p>
-                $$\text{parallel to ground}$$
+                $$\text{水平于地面}$$
               </p>
               $$F_{g\parallel}=F_{g}\sin(20)$$
               $$F_{g\parallel}=(196)\sin(20)$$
@@ -1162,10 +843,9 @@
       </details>
     </div>
 
-    <h3 class='underlined'>Tension Forces</h3>
+    <h3 class='underlined'>张力</h3>
     <p>
-      When a person is walking a dog they are able to apply a force on the dog with a leash. They use the tension on the
-      leash to transfer that force from their hand to the dog.
+当一个人遛狗时，他们能够用皮带对狗施加力。这利用的是张力，皮带将这种力量从他们的手转移到狗身上。
     </p>
     <div class="definition">
       <svg class='center on-edge' viewBox="0 0 500 220">
@@ -1190,16 +870,14 @@
         <text x="342" y="105" text-anchor="middle" fill="black">T</text>
       </svg>
       <p>
-        Tension is the pulling force from a chain, string, or rope. Tension is useful for transferring a force over a
-        distance. In most situations, the tension is the same for both ends.
+        张力是链条、绳子或绳索的拉力。张力可用于将力传递到远处。在大多数情况下，两端的张力是相同的。
       </p>
     </div>
 
     <div class='example'>
-      <strong>Example:</strong> A helium balloon is attached to a 0.5 g paper clip. If the balloon and paper clip are
-      accelerating up at 0.023 m/s², what is the tension on the paper clip from the balloon in Newtons?
+      <strong>例:</strong> 将氦气球连接到0.5克回形针上。如果气球和回形针是 以 0.023 m/s² 的速度加速，气球回形针上的张力是多少牛顿？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <svg class="center" width="240" height="225">
           <line x1="0" y1="150" x2="200" y2="150" stroke="#000" stroke-width="2" />
           <rect x="60" y="70" width="80" height="80" style="stroke:black;stroke-width:2;fill:#f33 " />
@@ -1223,11 +901,9 @@
       </details>
     </div>
     <div class='example'>
-      <strong>Example:</strong> A 100 kg person is pulling a 10&nbsp;kg crate with a rope (ignore the mass of the rope).
-      Both the person and the crate are accelerating to the left at 0.1&nbsp;m/s². What force is the person producing in
-      order to accelerate to the left?
+      <strong>例:</strong> 一个 100 公斤的人用绳子拉着一个 10 公斤的板条箱（忽略绳子的质量）。 人和板条箱都以 0.1 m/s² 的速度向左加速。这个人施加了多大的力量？
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <svg viewBox="-25 0 600 120">
           <line x1="180" y1="70" x2="400" y2="70" stroke-width="2" stroke="#888" />
           <g transform='translate(100 20) rotate(0)'>
@@ -1237,7 +913,7 @@
           </g>
           <use xlink:href="#vector" transform='translate(100 60) rotate(90)' />
           <text x="10" y="65" fill="black">F
-            <tspan font-size="0.7em" dy="5" dx="-5">person</tspan>
+            <tspan font-size="0.7em" dy="5" dx="-5">人的拉力</tspan>
           </text>
           <use xlink:href="#vector" transform='translate(180 60) rotate(-90)' />
           <text x="185" y="50" fill="black">T
@@ -1253,7 +929,7 @@
             <!-- <tspan font-size="0.7em" dy="5" dx="-5">box</tspan> -->
           </text>
         </svg>
-        <p>The tension force is equal and opposite for the person and crate.</p>
+        <p>张力对于人和板条箱是相等且相反的。</p>
         $$\text{crate on right}$$
         $$\sum F=ma$$
         $$T = 10 (-0.1)$$
@@ -1284,7 +960,7 @@
           <text x="40" y="40" fill="#000" text-anchor="middle" dominant-baseline="middle" font-size='20px'>10 kg</text>
         </g>
         <text x="46" y="67" fill="black">T
-          <!-- <tspan font-size="0.7em" dy="5" dx="-5">Tension</tspan> -->
+          <!-- <tspan font-size="0.7em" dy="5" dx="-5">张力</tspan> -->
         </text>
 
         <use xlink:href="#vector" transform='translate(180 120) rotate(-90)' />
@@ -1292,19 +968,16 @@
           <tspan font-size="0.7em" dy="5" dx="-5">dog</tspan>
         </text>
       </svg>
-      <strong>Example:</strong> You are walking your dog with the leash at a 45 degree angle down towards the dog.
-      Neither you nor the dog are accelerating. The dog is pulling on the leash forward with a force of 100 N.
-      Calculate the x part of the tension force on the leash. Then calculate the total tension force.
+      <strong>例:</strong> 您正在遛狗，皮带与狗成 45 度角。 你和狗都没有加速。狗以 100 N 的力向前拉动皮带。 计算皮带上张力的 x 部分。然后计算总张力。
       <details>
-        <summary>solution</summary>
-        $$\text{dog: horizontal}$$
+        <summary>解</summary>
+        $$\text{水平方向上}$$
         $$\sum F=ma$$
         $$-T_x + F_{\mathrm{dog}} = 0$$
         $$-T_x + 100 \, \mathrm{N} = 0$$
         $$T_x= 100 \,\mathrm{N}$$
         <p>
-          The 100 N is only the x-part of the tension force vector. We can find the total tension force with the
-          Pythagorean theorem. At 45° the x and y parts of the force are the same.
+          100 N 只是张力矢量的 x 部分。我们可以用 勾股定理。在 45° 时，力的 x 和 y 部分是相同的。
         </p>
         $$T^2 = 100^2+100^2$$ $$T^2 = 20\,000$$ $$T = 141 \, \mathrm{N}$$
       </details>
@@ -1329,20 +1002,18 @@
         <!-- <text x="336" y="66" fill="#000">F</text> -->
       </svg>
 
-      <strong>Example:</strong> A 0.4 kg squirrel is pulling a 10 kg box with a string. The squirrel and box are
-      accelerating to the left at 0.5 m/s². What is the force of tension on the string? What force is the squirrel
-      producing in order to accelerate to the left?
+      <strong>例:</strong> 一只 0.4 公斤的松鼠正在用绳子拉着一个 10 公斤的盒子。松鼠和盒子是 以 0.5 m/s² 的速度向左加速。绳子上的张力是多少？松鼠施加的力为多大？
       <details>
-        <summary>solution</summary>
-        $$ \text{box}$$ $$\sum F=ma$$ $$F_{\mathrm{tension}}=(10)(-0.5)$$ $$F_{\mathrm{tension}}=-5\, \mathrm{N}$$
+        <summary>解</summary>
+        $$ \text{盒子}$$ $$\sum F=ma$$ $$F_{\mathrm{张力}}=(10)(-0.5)$$ $$F_{\mathrm{张力}}=-5\, \mathrm{N}$$
         <br>
-        <p>The tension force on the string is equal but opposite for the squirrel and box.</p>
-        $$ \text{squirrel}$$ $$\sum F=ma$$
-        $$F_{\mathrm{squirrel}} + F_{\mathrm{tension}}=ma$$
-        $$F_{\mathrm{squirrel}} + 5=(0.4)(-0.5)$$
-        $$F_{\mathrm{squirrel}}=-0.2-5$$ $$F_{\mathrm{squirrel}}=-5.2 \, \mathrm{N}$$
-        <p>The negative sign tells us that the squirrel's force is pointed left.</p>
-        $$F_{\mathrm{squirrel}}=5.2 \, \mathrm{N} \text{ left}$$
+        <p>绳子上的张力相等，但对于松鼠和盒子来说是相反的。</p>
+        $$ \text{松鼠}$$ $$\sum F=ma$$
+        $$F_{\mathrm{松鼠}} + F_{\mathrm{张力}}=ma$$
+        $$F_{\mathrm{松鼠}} + 5=(0.4)(-0.5)$$
+        $$F_{\mathrm{松鼠}}=-0.2-5$$ $$F_{\mathrm{松鼠}}=-5.2 \, \mathrm{N}$$
+        <p> 负号告诉我们松鼠的力量是向左的。</p>
+        $$F_{\mathrm{松鼠}}=5.2 \, \mathrm{N} \text{ 向左}$$
       </details>
     </div>
 
@@ -1372,72 +1043,13 @@
           <text x="342" y="105" text-anchor="middle">T</text>
         </g>
       </svg>
-      <strong>Example:</strong> Use the diagram to predict the acceleration of the masses.
-      <br>Assume no friction, no air resistance, Earth gravity, and a massless rope.
-      <details>
-        <summary>hint</summary>
-        <div class="center">
-          <svg width="200" height="200">
-            <g font-size="19" stroke="#000" fill="#fff" stroke-width="2">
-              <rect x="75" y="75" width="50" height="50" />
-            </g>
-            <g transform='translate(125 100) rotate(-90)'>
-              <use xlink:href="#vector" />
-            </g>
-            <g transform='translate(100 125) rotate(0)'>
-              <use xlink:href="#vector" />
-            </g>
-            <g transform='translate(100 75) rotate(180)'>
-              <use xlink:href="#vector" />
-            </g>
-            <g fill="black" stroke="none">
-              <text x="100" y="100" dominant-baseline="middle" text-anchor="middle">20 kg</text>
-              <text x="150" y="90">T = ?</text>
-              <text x="110" y="35">F
-                <tspan font-size="0.7em" dy="5" dx="-5">N</tspan>
-              </text>
-              <text x="110" y="173">F
-                <tspan font-size="0.7em" dy="5" dx="-5">g</tspan>
-              </text>
-            </g>
-          </svg>
-
-          <svg width="200" height="200">
-            <g font-size="19" stroke="#000" fill="#fff" stroke-width="2">
-              <rect x="75" y="75" width="50" height="50" />
-            </g>
-            <g transform='translate(100 125) rotate(0)'>
-              <use xlink:href="#vector" />
-            </g>
-            <g transform='translate(100 75) rotate(180)'>
-              <use xlink:href="#vector" />
-            </g>
-            <g fill="black" stroke="none">
-              <text x="100" y="100" dominant-baseline="middle" text-anchor="middle">10 kg</text>
-              <text x="110" y="35">T = ?</text>
-              <text x="110" y="173">F
-                <tspan font-size="0.7em" dy="5" dx="-5">g</tspan>
-                <tspan font-size="1em" dy="-5"> = ?</tspan>
-              </text>
-            </g>
-          </svg>
-        </div>
-        <p>
-          Both free body diagrams share the same tension and acceleration. Build two equations with Newton's second law
-          and solve a system of equations for T and a. While T and a are the same magnitude they have different
-          directions, so watch the sign of acceleration in particular.
-        </p>
-        <p>
-          This Khan academy <a
-            href="https://www.khanacademy.org/science/physics/forces-newtons-laws/treating-systems/v/treating-systems-the-hard-way">video</a>
-          covers this problem in more depth.
-        </p>
-      </details>
+      <strong>例:</strong> 使用该图预测质量的加速度。
+      <br>假设没有摩擦，没有空气阻力，没有地球重力和无质量的绳索。
 
       <details>
-        <summary>solution</summary>
-        $$\text{20kg box: horizontal}$$ $$\sum F=ma_x$$ $$T = ma_x$$ $$T = \color{#d3a}20a_x$$
-        <br> $$\text{10kg box: vertical}$$
+        <summary>解</summary>
+        $$\text{水平}$$ $$\sum F=ma_x$$ $$T = ma_x$$ $$T = \color{#d3a}20a_x$$
+        <br> $$\text{垂直}$$
         $$\sum F=ma_y$$
         $$T - F_g = ma_y$$
         $$T - mg = ma_y$$
@@ -1450,12 +1062,12 @@
         $$-3.2\overline{6} \, \mathrm{\tfrac{m}{s^2}} = a_y$$
       </details>
       <details>
-        <summary>solution (treating system as one mass)</summary>
-        $$\text{gravity only pulls on the 10kg part}$$
+        <summary>解(按同一系统对待)</summary>
+        $$\text{重力只作用于10kg的部分}$$
         $$F_g = m g$$
         $$F_g = (10 \, \mathrm{kg})(9.8\, \mathrm{\tfrac{m}{s^2}})$$
         $$F_g = \color{#d3a}98 \, \mathrm{N}$$
-        <br> $$\text{use both masses to find acceleration in the vertical}$$ $$\sum F=ma$$ $$F_g = (10\,
+        <br> $$\text{将两个物体视作整体}$$ $$\sum F=ma$$ $$F_g = (10\,
         \mathrm{kg}+20\, \mathrm{kg}) a$$
         $$F_g = (30\, \mathrm{kg}) a$$
         $$98\, \mathrm{N} = (30\,\mathrm{kg}) a$$
@@ -1527,10 +1139,9 @@
           <text x="250" y="250" font-size="22" dominant-baseline="middle" text-anchor="middle">25 kg</text>
         </g>
       </svg>
-      <strong>Example:</strong> Two blocks are attached to each other with a rope hanging over a wheel. Find the
-      acceleration of each body. Ignore friction, and assume the wheel and rope have a negligible mass.
+      <strong>例:</strong> 两个积木通过悬挂在轮子上的绳子相互连接。找到 每个身体的加速度。忽略摩擦，并假设轮子和绳索的质量可以忽略不计。
       <details>
-        <summary>solution</summary>
+        <summary>解</summary>
         <div class="col-group">
           <div>
             $$\text{10 kg block}$$
@@ -1550,9 +1161,7 @@
           </div>
         </div>
         <p>
-          We have two variables and two equations, this means we can plug one equation into the other. The Tension is
-          the same for each body. The accelerations are the same, but in opposite directions, so we need to make one
-          acceleration negative.
+          我们有两个变量和两个方程，这意味着我们可以将一个方程代入另一个方程。张力是 每个身体都是一样的。加速度是相同的，但方向相反，所以我们需要做一个 加速度为负。
         </p>
         <div class="col-group">
           <div>
@@ -1565,7 +1174,7 @@
         $$10({\color{#f05}-a})+98 = 25a+245 $$
         $$-35a = 147$$
         $$a = -4.2 \, \tfrac{m}{s^2}$$
-        <p>The 25kg object is falling down at 4.2 m/s². The 10kg is rising up at 4.2 m/s².</p>
+        <p>25kg 的物体以 4.2 m/s² 的速度下落。10kg 以 4.2 m/s² 的速度上升。</p>
       </details>
     </div>
     <!-- <div class='example'>
@@ -1577,7 +1186,7 @@ https://openstax.org/books/college-physics-2e/pages/9-5-simple-machines
       In the diagram below, the pulley is massless and frictionless.
       The rope is massless.
       The 10 kg block is lifted at a constant speed.
-      Find the tension in the rope and the force the person is exerting.
+      Find the 张力 in the rope and the force the person is exerting.
 
       <details>
         <summary>solution</summary>
@@ -1586,7 +1195,7 @@ https://openstax.org/books/college-physics-2e/pages/9-5-simple-machines
     </div> -->
   </article>
   <footer>
-    <a href="../../../">Back</a>
+    <a href="../../../主页面.html">返回</a>
   </footer>
 
   <script>
